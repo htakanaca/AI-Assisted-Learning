@@ -10,12 +10,9 @@ O Z-score (também conhecido como escore-Z, pontuação padrão ou standard scor
 
 A fórmula que você tem é exatamente a definição do Z-score:
 
-Z= 
-σ
-X−μ
+$$Z = \frac{X - \mu}{\sigma}$$
 ​
  
-
 Onde:
 
 X: É um ponto de dado individual (diff_nivel, no caso do script 'bloco1_n3_outliers_substitution.m').
