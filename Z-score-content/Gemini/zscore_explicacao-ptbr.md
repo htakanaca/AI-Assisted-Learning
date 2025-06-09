@@ -1,11 +1,11 @@
-Explicação didática do Modelo Gemini (Flash 2.5, em junho/2025) sobre o uso da medida estatística Z-score como método de avaliação de outliers em dados de parâmetros oceanográficos.
+***Explicação didática do Modelo Gemini (Flash 2.5, em junho/2025) sobre o uso da medida estatística Z-score como método de avaliação de outliers em dados de parâmetros oceanográficos.***
 
 Referências aos scripts de substituição de outliers nos repositórios:
 https://github.com/htakanaca/laboceano-bloco1-nivel-mar
 https://github.com/htakanaca/laboceano-bloco2-correntes-marinhas
 
 
-O Que É o Z-score (E Por Que Usamos Ele)?
+**O Que É o Z-score (E Por Que Usamos Ele)?**
 O Z-score (também conhecido como escore-Z, pontuação padrão ou standard score) é uma medida estatística que descreve a posição de um ponto de dados em relação à média de um grupo de pontos, em unidades de desvio padrão.
 
 A fórmula que você tem é exatamente a definição do Z-score:
@@ -15,16 +15,16 @@ $$Z = \frac{X - \mu}{\sigma}$$
  
 Onde:
 
-X: É um ponto de dado individual (diff_nivel, no caso do script 'bloco1_n3_outliers_substitution.m').
-μ: É a média (mean) da população ou amostra de dados (mean(diff_nivel)).
-σ: É o desvio padrão (standard deviation) da população ou amostra de dados (std(diff_nivel)).
-Para que serve o Z-score?
+# X: É um ponto de dado individual (diff_nivel, no caso do script 'bloco1_n3_outliers_substitution.m').
+# μ: É a média (mean) da população ou amostra de dados (mean(diff_nivel)).
+# σ: É o desvio padrão (standard deviation) da população ou amostra de dados (std(diff_nivel)).
+*Para que serve o Z-score?*
 O Z-score tem duas finalidades principais no seu contexto:
 
-Padronização (Escalonamento): Ele transforma os dados para uma escala comum, independentemente de suas unidades originais. Após a transformação, os dados terão:
+# Padronização (Escalonamento): Ele transforma os dados para uma escala comum, independentemente de suas unidades originais. Após a transformação, os dados terão:
 
-Média = 0
-Desvio Padrão = 1 Isso é o que chamamos de normalização ou padronização. É por isso que você observa que zscore_diff tem média próxima de zero e desvio padrão próximo de um.
+    # Média = 0
+    # Desvio Padrão = 1 Isso é o que chamamos de **normalização** ou **padronização**. É por isso que você observa que zscore_diff tem média próxima de zero e desvio padrão próximo de um.
 Medir Quão "Anormal" um Ponto É: O Z-score nos diz a quantos desvios padrão um ponto de dado está da média.
 
 Um Z-score de 0 significa que o ponto de dado é exatamente igual à média.
