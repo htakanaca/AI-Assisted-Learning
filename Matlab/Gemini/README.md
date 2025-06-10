@@ -43,3 +43,5 @@ Os conceitos e o esqueleto inicial desses scripts foram desenvolvidos com o apoi
 ---
 
 ## Licença
+
+Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
